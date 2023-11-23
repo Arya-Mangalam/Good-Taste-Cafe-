@@ -10,4 +10,4 @@ This project is a responsive and visually appealing website design for a cafe. I
 - About Us section
 - Contact details with a form
 
-click here to visit: https://arya-mangalam.github.io/Good-Taste-Cafe-/ 
+
