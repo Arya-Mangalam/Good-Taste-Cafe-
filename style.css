@@ -1,0 +1,266 @@
+html{
+    scroll-behavior:smooth
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.center{
+    text-align: center;
+
+}
+    
+
+/* Navigation bar  */
+    #navbar{
+        display: flex;
+        position: fixed;
+        top: 0px;
+        align-items: center;
+        width: 100%;
+    }
+
+    #navbar::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;;
+        background-color:black;
+        opacity: .4;
+        z-index: -1;
+    }
+
+
+
+    #logo{
+        margin: 10px 34px;
+        /* border: 2px solid red; */
+        /* background-color: blue; */
+        /* height: 1px; */
+    }
+
+    #logo img{
+        border: 2px solid yellow;
+        margin: 2px 6px;
+        height: 50px;
+        cursor:pointer  ;
+    }
+
+    #navbar ul{
+        display: flex;
+    }
+
+    #navbar ul li{
+        list-style: none;
+
+    }
+
+    #navbar ul li a{
+        /* display: block; */
+        text-decoration: none;
+        margin:25px 0px;
+        padding: 6px 15px;
+        border-radius: 20px;
+        color: white;
+        font-size: 18px;
+    }
+    #navbar ul li a:hover{
+        color:black;    
+       background-color: white; 
+    }
+
+
+
+    /* picture1 */
+
+
+    #home{
+
+        display: flex;
+        flex-direction: column;
+        /* padding: 3px ; */
+        justify-content: center;
+        height: 444px;
+        align-items:center;
+        margin-bottom: 80px;
+        
+        
+
+    }
+    
+    #home::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;;
+    background: url('Images/home.jpg') no-repeat center center/cover;
+    opacity: .6;
+    z-index: -1;
+    }
+
+    #home h1{
+
+        color: rgb(141, 22, 22);
+        text-shadow: 3px 1px 2px rgb(255, 89, 47);
+    }
+    #home p{
+        margin-top: 5px;
+        font-size: 1.2rem;
+    }
+    .btn{
+        margin-top:30px ;
+        width: 150px;
+        height: 50px;
+        border-radius: 22px;
+        background-color:  rgb(255, 89, 47);
+        border: 2px solid rgb(134, 37, 12);
+        font-size: 1.2rem;
+        color: black;
+        cursor: pointer;
+    }
+    .btn:hover{
+        color:white;
+        box-shadow: 3px 3px 2px black;
+    }
+
+
+ /* Services Section */
+ #services{
+    margin: 34px;
+    margin-top: 20px;
+    display: flex;
+}
+
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    transform: all .5s ease;
+    cursor: pointer;
+    text-align: center;
+    
+}
+#services .box:hover{   
+transform: scale(1.1);
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    text-align: left;
+
+} 
+
+
+/* Clients Section */
+       
+#client-section{ 
+    /* position: relative; */
+    position: static;
+    /* border: 2px solid red; */
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url("Images/client-section.jpeg");
+ background-repeat: no-repeat;
+ background-size: 1350px 300px;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.6;
+ 
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+    width: 200px;
+}
+
+ /* Contact Section */
+ #contact{
+    /* position: relative; */
+    /* position: static; */
+    margin-top: 9px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('Images/contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    opacity: .4;
+} 
+#contact-box input{
+opacity: .4;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+   /* opacity: .4; */
+}
+
+.btn1{
+    border: 2px solid rgb(150, 144, 144);
+    border-radius: 20px;
+    padding: 6px 6px;
+}
+.btn1:hover{
+    box-shadow: 2px 2px 1px black;
+}
+
+
+/* footer  */
+
+footer{
+    margin-top: 15px;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
